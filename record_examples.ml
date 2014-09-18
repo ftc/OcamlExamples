@@ -1,4 +1,4 @@
 type foo = { a: string; b: int}
+Format.printf "hi";;
 
-let v = {a="one"; b=1} in
-  (Format.printf "%s\n" v.a);;
+(* bug submitted: http://caml.inria.fr/mantis/view.php?id=6570 *)
