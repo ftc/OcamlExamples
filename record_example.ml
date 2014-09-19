@@ -2,4 +2,5 @@ type foo = {a : string; b: int;}
 
 let _ = 
   let v = {a="hi"; b=1} in
-  Format.printf "%s\n" v.a;;
+  let r = {v with a="bye"} in
+  Format.printf "%s\n" r.a;;
